@@ -12,7 +12,7 @@ int main()
         cin>>n;
         a = n / 2;
         b = a + n % 2;
-        cout<<a<<" "<<b;
+        cout<<a<<" "<<b<<endl;
 
     }
     return 0;
