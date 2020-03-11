@@ -15,7 +15,7 @@ string decToBin(long long int n)
 }
 long long int binToDec(string n)
 {
-    long long int num = 0, m = 1;
+    long long int num = 0;
     for(int i = n.length() - 1, j= 0; i >= 0; i--, j++)
     {
         num += ((n[i]-'0') * pow(2.0, j));
