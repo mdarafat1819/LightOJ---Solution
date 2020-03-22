@@ -19,9 +19,9 @@ void ordering(int* ara, int* num)
         int flag = 0;
         for(int i = 1; i < 1000; i++)
         {
-            if(dc(num[i]) > dc(num[i + 1]))
+            if(ara[num[i]] > ara[num[i + 1]])
                 swap(num[i], num[i + 1]), flag++;
-            else if((dc(num[i]) == dc(num[i + 1])) && num[i] < num[i+1])
+            else if((ara[num[i]] == ara[num[i + 1]] && num[i] < num[i+1]))
                 swap(num[i], num[i +1]), flag++;
         }
         if(!flag) break;
