@@ -23,17 +23,9 @@ void sieve_phi()
         phi[i] = phi[i-1] + phi[i] * phi[i];
     }
 }
-
-void cal()
-{
-    for(int i = 1; i < SIZE; i++)
-        phi[i] = phi[i-1] + phi[i] * phi[i];
-}
-
 int main()
 {
     sieve_phi();
-    //cal();
     int t;
     cin>>t;
     for(int cs = 1; cs <= t; cs++)
